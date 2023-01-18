@@ -7,20 +7,16 @@
  */
 
 import React from 'react';
-import {
-  SafeAreaView,
-  StatusBar,
-  useColorScheme,
-  Text
-} from 'react-native';
+import {SafeAreaView, StatusBar, useColorScheme, Text} from 'react-native';
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
-
+import YemegimButton from './src/components/YemegimButton';
 
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
+    flex: 1,
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
 
@@ -31,10 +27,9 @@ const App = () => {
         backgroundColor={backgroundStyle.backgroundColor}
       />
       <Text>Y-EMEĞİM</Text>
+      <YemegimButton text="Tıkla" />
     </SafeAreaView>
   );
 };
-
-
 
 export default App;
