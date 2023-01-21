@@ -4,7 +4,7 @@ import {Text, TouchableOpacity, View} from 'react-native';
 const YemegimButton = props => {
   return (
     <View>
-      <TouchableOpacity style={styles.button}>
+      <TouchableOpacity style={styles.button} onPress={props.onPress}>
         <Text style={styles.buttonText}>{props.text}</Text>
       </TouchableOpacity>
     </View>
