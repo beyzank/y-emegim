@@ -3,7 +3,7 @@ import {SafeAreaView, StatusBar, Text, useColorScheme} from 'react-native';
 import YemegimButton from '../../components/YemegimButton';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 
-const HomePage = props => {
+const HomeScreen = props => {
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
@@ -25,4 +25,4 @@ const HomePage = props => {
   );
 };
 
-export default HomePage;
+export default HomeScreen;
